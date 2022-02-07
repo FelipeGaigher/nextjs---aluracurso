@@ -1,7 +1,11 @@
+import FAQScreen from '../src/screens/FAQScreen';
+
+export default FAQScreen; 
+
 // import Head from "next/head";
-import Link from "../src/components/Link";
-import Title from "../src/components/Title";
-import PageTitle from "../src/components/PageTitle";
+// import Link from "../src/components/Link";
+// import Title from "../src/components/Title";
+// import PageTitle from "../src/components/PageTitle";
 // import { useState, useEffect } from "react";
 
 // export async function getServerSideProps() {
@@ -29,28 +33,28 @@ export async function getStaticProps() {
   };
 }
 
-const FaqPage = ({ faq }) => {
-  console.log(faq);
+// const FaqPage = ({ faq }) => {
+//   console.log(faq);
 
-  return (
-    <>
-      <PageTitle>FAQ - Alura Cases Campanha</PageTitle>
-      <Title as="h2">Alura Case - Páginas de perguntas FAQ</Title>
-      <Link href="/" passHref>
-        Alura Case - ir para a Home
-      </Link>
-      <ul>
-        {faq.map(({ answer, question }) => (
-          <li key={question}>
-            <article>
-              <h2>{question}</h2>
-              <p>{answer}</p>
-            </article>
-          </li>
-        ))}
-      </ul>
-    </>
-  );
-};
+//   return (
+//     <>
+//       <PageTitle>FAQ - Alura Cases Campanha</PageTitle>
+//       <Title as="h2">Alura Case - Páginas de perguntas FAQ</Title>
+//       <Link href="/" passHref>
+//         Alura Case - ir para a Home
+//       </Link>
+//       <ul>
+//         {faq.map(({ answer, question }) => (
+//           <li key={question}>
+//             <article>
+//               <h2>{question}</h2>
+//               <p>{answer}</p>
+//             </article>
+//           </li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+// };
 
-export default FaqPage;
+// export default FaqPage;
